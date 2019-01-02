@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # platzi_trips_app
 
 A new Flutter application.
@@ -18,4 +18,3 @@ samples, guidance on mobile development, and a full API reference.
 =======
 # FlutterApp
 Aplicación de travelling
->>>>>>> ca7026792258acf402a6df397c1ce8e798da7a0c
