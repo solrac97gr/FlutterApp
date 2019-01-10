@@ -1,5 +1,5 @@
 
-# platzi_trips_app
+# Flutter FeedBack System for Food
 
 A new Flutter application.
 
