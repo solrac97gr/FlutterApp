@@ -1,7 +1,7 @@
 
 # Flutter FeedBack System for Food
 
-A new Flutter application.
+Hecha con el Curso de Flutter de Platzi originalmente iba a ser un sistema de feedback para lugares, pero decidi darle un giro y llevarla al entorno donde trabajo
 
 ## Getting Started
 
@@ -17,4 +17,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 =======
 # FlutterApp
-Aplicación de travelling
+Aplicación de FeedBack
