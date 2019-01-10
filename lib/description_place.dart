@@ -80,6 +80,7 @@ class DescriptionPlace extends StatelessWidget{
       child: Text(
         descriptionfood,
         style: const TextStyle(
+          fontFamily: "Lato Regular",
           fontSize: 16.0,
           fontWeight: FontWeight.bold,
           color: Color(0xFF56575a),
