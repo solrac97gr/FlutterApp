@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,32 +10,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Hola',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter Rules"),
+          title: Text("Dejanos tu opinion"),
+          backgroundColor: Color(0xFF56b57c),
         ),
-        body: Center(
-          child: Text("Hola Dart, bye Kotlin"),
-
-        ),
-        floatingActionButton: FloatingActionButton(
-            tooltip: 'add',
-            onPressed: null,
-            child: Icon(Icons.add),
-        ),
-
-      )//MyHomePage(title: 'Home'),
+        body: new DescriptionPlace("Ají de gallina",5,"El ají de gallina es un plato oriundo del Perú, consiste en un ají o crema espesa con pechuga de gallina deshilachada. Esta crema es servida con papas cocidas, y en ocasiones arroz blanco. Es usual reemplazar la gallina por pollo."),
+        ) //MyHomePage(title: 'Home')
     );
   }
 }
