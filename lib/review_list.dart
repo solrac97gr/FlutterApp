@@ -5,9 +5,9 @@ class ReviewList extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        new Review("assets/img/fotoperfil.jpg", "Carlos Garcia", "1 review 5 photos","Me gusta mucho el ají de gallina,es la mejor comida del Perú"),
-
+        Review("assets/img/fotoperfil.jpg", "Carlos Garcia", "1 review 5 photos","Me gusta mucho el ají de gallina"),
       ],
     );
   }

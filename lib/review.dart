@@ -11,9 +11,10 @@ class Review extends StatelessWidget{
     final userStars = Container(
       margin: EdgeInsets.only(
         right: 3.0,
+        top: 10
       ),
-      child: Icon(Icons.star),
-      color: Color(0xFF56b57c),
+      child: Icon(Icons.star,color: Color(0xFF56b57c)),
+
     );
     final userComment = Container(
       margin: EdgeInsets.only(
@@ -32,7 +33,8 @@ class Review extends StatelessWidget{
 
     final userInfo = Container(
       margin: EdgeInsets.only(
-          left: 20.0
+          left: 20.0,
+          top: 17
       ),
       child: Text(
         details,
@@ -47,6 +49,7 @@ class Review extends StatelessWidget{
     );
     final userName = Container(
       margin: EdgeInsets.only(
+        top: 10.0,
        left: 20.0
       ),
       child: Text(
@@ -64,11 +67,11 @@ class Review extends StatelessWidget{
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         userName,
-
         userComment
       ],
     );
     final userScore = Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         userInfo,
         userStars,
@@ -80,11 +83,11 @@ class Review extends StatelessWidget{
     );
     final photo=Container(
       margin: EdgeInsets.only(
-        top: 20.0,
+        top: 40.0,
         left: 20.0,
       ),
-      width: 80.0,
-      height: 80.0,
+      width: 50.0,
+      height: 50.0,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         image: DecorationImage(
@@ -93,11 +96,18 @@ class Review extends StatelessWidget{
         ),
       ),
     );
+    final userDetailScore = Column(
+      children: <Widget>[
+        userScore,
+        userDetails
+      ],
+    );
     return Row(
       children: <Widget>[
         photo,
-        userScore,
-        userDetails
+        userDetailScore
+        //userScore
+        //userDetails
       ],
     );
 }
