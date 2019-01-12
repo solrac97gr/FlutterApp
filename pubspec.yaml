@@ -68,6 +68,11 @@ flutter:
   # see https://flutter.io/custom-fonts/#from-packages
   assets:
       - assets/img/fotoperfil.jpg
+      - assets/img/ajidegallina.jpg
+      - assets/img/causa.png
+      - assets/img/ceviche.jpeg
+      - assets/img/juane.jpeg
+      - assets/img/lomosaltado.jpg
   fonts:
     - family: Lato Regular
       fonts:

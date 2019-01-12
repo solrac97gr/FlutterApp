@@ -33,8 +33,9 @@ class Review extends StatelessWidget{
 
     final userInfo = Container(
       margin: EdgeInsets.only(
-          left: 20.0,
-          top: 17
+          //left: 20.0,
+          top: 17,
+          right: 5,
       ),
       child: Text(
         details,

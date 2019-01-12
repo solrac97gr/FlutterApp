@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
 import 'gradient_back.dart';
+import 'card_img_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,17 +16,30 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
+        /*appBar: AppBar(
           title: Text("Dejanos tu opinion"),
           backgroundColor: Color(0xFF56b57c),
+        ),*/
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Aji de gallina",5,"El ají de gallina es un plato oriundo del Perú, consiste en un ají o crema espesa con pechuga de gallina deshilachada. Esta crema es servida con papas cocidas, y en ocasiones arroz blanco. Es usual reemplazar la gallina por pollo."),
+                ReviewList()
+              ],
+            ),
+            GradientBack("Popular"),
+            CardImgList(),
+
+          ],
         ),
-        body:Column(
+          /*Column(
           children: <Widget>[
             GradientBack(),
             DescriptionPlace("Aji de gallina",5,"El ají de gallina es un plato oriundo del Perú, consiste en un ají o crema espesa con pechuga de gallina deshilachada. Esta crema es servida con papas cocidas, y en ocasiones arroz blanco. Es usual reemplazar la gallina por pollo."),
             ReviewList()
           ],
-        )
+        )*/
         //GradientBack()
         )
         //MyHomePage(title: 'Home')
